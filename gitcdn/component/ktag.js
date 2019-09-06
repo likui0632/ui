@@ -13,7 +13,6 @@ var ktag= {
 			type: String,
 			default: ''
 		},
-
 	},
 	data() {
 		return {
