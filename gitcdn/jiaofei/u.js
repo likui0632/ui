@@ -37,11 +37,14 @@ function json_array(data) {
 
 function set_cache(key, value) {
 	if(key == '') return false;
-	localStorage.setItem(key, value);
+	
+	var e =JSON.stringify(value); 
+	localStorage.setItem(data, e);
 }
 
 function get_cache(key) {
-	return localStorage.getItem(key);
+	 var data = localStorage.getItem(key);
+	return	JSON.parse(data);
 }
 
 function remove_cache(key) {
